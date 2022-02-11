@@ -3,4 +3,4 @@ kind: Kustomization
 resources:
   - helm-release.yaml
   - dashboard
-  - config-pvc.yaml
+#  - config-pvc.yaml
