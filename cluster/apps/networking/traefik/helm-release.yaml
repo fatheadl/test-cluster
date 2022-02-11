@@ -97,5 +97,6 @@ spec:
         memory: 500Mi
     persistence:
       enabled: true
+      existingClaim: traefik-data
       path: /data
       size: 128Mi        
