@@ -84,3 +84,7 @@ spec:
         cpu: 500m
       limits:
         memory: 500Mi
+    persistence:
+      enabled: true
+      path: /data
+      size: 128Mi        
