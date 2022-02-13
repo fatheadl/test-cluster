@@ -15,4 +15,4 @@ spec:
           name: whoamiv1
           port: 80
   tls:
-    certResolver: myresolver
+    certResolver: le
