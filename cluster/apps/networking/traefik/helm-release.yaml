@@ -63,6 +63,8 @@ spec:
       - "--providers.kubernetesingress.ingressendpoint.ip=${METALLB_TRAEFIK_ADDR}"
       - "--providers.kubernetesingress.allowexternalnameservices=true"
       - "--providers.kubernetescrd.allowexternalnameservices=true"
+      - "--providers.kubernetescrd"
+      - "--providers.kubernetescrd.allowCrossNamespace=true"
     env:
       - name: DUCKDNS_TOKEN
         value: ${SECRET_CLOADFLARE_TOKEN}
