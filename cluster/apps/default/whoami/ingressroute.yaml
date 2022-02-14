@@ -3,6 +3,7 @@ apiVersion: traefik.containo.us/v1alpha1
 kind: IngressRoute
 metadata:
   name: whoami
+  namespace: default  
 spec:
   entryPoints:
     - websecure
@@ -14,4 +15,4 @@ spec:
           name: whoamiv1
           port: 80
   tls:
-    certResolver: myresolver
+    certResolver: le
