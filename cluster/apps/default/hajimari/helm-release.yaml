@@ -111,7 +111,7 @@ spec:
               - path: /
                 pathType: Prefix
         tls:
-          - certresolver: "le"
+          - certResolver: "le"
           - hosts:
               - "hajimari.${SECRET_DOMAIN}"
             secretName: "hajimari-tls"
