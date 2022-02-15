@@ -68,6 +68,8 @@ spec:
     env:
       - name: DUCKDNS_TOKEN
         value: ${SECRET_CLOADFLARE_TOKEN}
+      - name: TZ
+        value: America/Jamaica
     ports:
       traefik:
         expose: true
@@ -99,6 +101,5 @@ spec:
         memory: 500Mi
     persistence:
       enabled: true
-#    existingClaim: traefik-data
       path: /data
       size: 128M
