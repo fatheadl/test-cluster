@@ -1,0 +1,18 @@
+---
+apiVersion: traefik.containo.us/v1alpha1
+kind: IngressRoute
+metadata:
+  name: node-red
+  namespace: home  
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`nr.fatheadl.duckdns.org`)
+      services:
+        - kind: Service
+          name: node-red
+          port: 80
+  tls:
+    certResolver: le
