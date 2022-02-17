@@ -33,7 +33,7 @@ spec:
       TZ: "America/Jamaica"
       NODE_RED_ENABLE_PROJECTS: "true"
       NODE_RED_ENABLE_SAFE_MODE: "false"
-    
+
     persistence:
       config:
         enabled: true
