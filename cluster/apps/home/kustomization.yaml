@@ -6,3 +6,4 @@ resources:
 #  - mqtt
   - node-red
 #  - zigbee2mqtt
+#  - homebridge
