@@ -35,6 +35,6 @@ spec:
 
     persistence:
       config:
-      enabled: true
-      mountPath: /homebridge
-      existingClaim: homebridge-config-v1
+        enabled: true
+        mountPath: /homebridge
+        existingClaim: homebridge-config-v1
