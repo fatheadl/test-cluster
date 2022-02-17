@@ -36,4 +36,4 @@ spec:
   persistence:
     config:
       enabled: true
-       existingClaim: homebridge-config-v1
+#       existingClaim: homebridge-config-v1
