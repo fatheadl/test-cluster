@@ -37,4 +37,4 @@ spec:
     config:
       enabled: true
       mountPath: /homebridge
-#       existingClaim: homebridge-config-v1
+      existingClaim: homebridge-config-v1
