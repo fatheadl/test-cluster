@@ -21,7 +21,7 @@ spec:
   values:
     image:
       repository: ghcr.io/oznu/homebridge
-      tag: 2022-01-20
+      tag: 2022-01-11
       pullPolicy: IfNotPresent
 
 
