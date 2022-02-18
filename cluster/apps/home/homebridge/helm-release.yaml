@@ -21,7 +21,7 @@ spec:
   values:
     image:
       repository: ghcr.io/oznu/homebridge
-      tag: 2202-02-08
+      tag: 2022-01-11@sha256:f3ef38bfd3bde4cc72fdd1789204c1b35314e7d6d3d5dc49d3a20dcb46d132dc
       pullPolicy: IfNotPresent
 
 
@@ -33,7 +33,14 @@ spec:
     hostNetwork: true
     dnsPolicy: ClusterFirstWithHostNet
 
-  persistence:
-    config:
-      enabled: true
-#       existingClaim: homebridge-config-v1
+    persistence:
+      config:
+        enabled: true
+        mountPath: /homebridge
+        existingClaim: homebridge-config-v1
+    resources:
+      requests:
+        memory: 100Mi
+        cpu: 100m
+      limits:
+        memory: 500Mi        
