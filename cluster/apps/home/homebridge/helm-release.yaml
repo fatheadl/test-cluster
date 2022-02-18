@@ -21,7 +21,7 @@ spec:
   values:
     image:
       repository: ghcr.io/oznu/homebridge
-      tag: latest@sha256:f3ef38bfd3bde4cc72fdd1789204c1b35314e7d6d3d5dc49d3a20dcb46d132dc
+      tag: latest@sha256:072a7f5dd6d40d0785d002ea13b2f6220f1d96b32738cc00c8e059a359464564
       pullPolicy: IfNotPresent
 
 
