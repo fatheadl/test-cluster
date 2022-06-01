@@ -22,7 +22,7 @@ spec:
       tag: v4.0.2
     nfs:
       server: "192.168.2.2"
-      path: "/volume2/SSD_NFS/k8s/"
+      path: "/fatheadl/"
     mountOptions:
     - nfsvers=3
     - tcp
@@ -31,5 +31,5 @@ spec:
     - noatime
     - nodiratime
     storageClass:
-      defaultClass: false
+      defaultClass: true
       archiveOnDelete: true
