@@ -8,7 +8,6 @@ spec:
   interval: 5m
   chart:
     spec:
-      # renovate: registryUrl=https://kubernetes-sigs.github.io/nfs-subdir-external-provisioner/
       chart: democratic-csi
       version: 0.12.0
       sourceRef:
