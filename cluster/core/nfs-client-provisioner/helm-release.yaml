@@ -33,3 +33,4 @@ spec:
     storageClass:
       defaultClass: true
       archiveOnDelete: true
+      provisionerName: test
