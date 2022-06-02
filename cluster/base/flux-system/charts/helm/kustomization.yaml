@@ -25,3 +25,4 @@ resources:
   - weaveworks-kured-charts.yaml
   - influx-charts.yaml
   - longhorn-charts.yaml
+  - democratic-csi-charts.yaml
