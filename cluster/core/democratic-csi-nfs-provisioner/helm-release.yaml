@@ -60,8 +60,8 @@ spec:
           # shareHost:shareBasePath should be mounted at this location in the controller container
           controllerBasePath: "/storage"
           dirPermissionsMode: "0777"
-          dirPermissionsUser: root
-          dirPermissionsGroup: users
+          dirPermissionsUser: 1000
+          dirPermissionsGroup: 100
 
     # There are 4 different approaches to installing the driver
     # 1: Run the controller service separated from the node service, mount the base share into the controller pod at run time
@@ -100,10 +100,10 @@ spec:
         lifecycle:
           postStart:
             exec:
-              command: ["/bin/sh", "-c", "mkdir -p <controllerBasePath>; mount <shareHost>:<shareBasePath> <controllerBasePath>"]
+              command: ["/bin/sh", "-c", "mkdir -p /storage; mount omv3.home:/fatheadl /storage"]
           preStop:
             exec:
-              command: ["/bin/sh","-c","umount <controllerBasePath>"]
+              command: ["/bin/sh","-c","umount /storage"]
 
     # Option 2
     # do this if all nodes DO have the base volume mounted out-of-band from k8s
