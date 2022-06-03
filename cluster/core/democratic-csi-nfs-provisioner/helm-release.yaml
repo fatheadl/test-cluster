@@ -91,7 +91,6 @@ spec:
             exec:
               command: ["/bin/sh","-c","umount /storage"]
 
-      driver:
         config:
           # please see the most up-to-date example of the corresponding config here:
           # https://github.com/democratic-csi/democratic-csi/tree/master/examples
