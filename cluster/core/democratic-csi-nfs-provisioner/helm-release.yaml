@@ -100,7 +100,7 @@ spec:
         instance_id:
         nfs:
           shareHost: omv3.home
-          shareBasePath: "/fathead"
+          shareBasePath: "/fatheadl"
           # shareHost:shareBasePath should be mounted at this location in the controller container
           controllerBasePath: "/storage"
           dirPermissionsMode: "0777"
