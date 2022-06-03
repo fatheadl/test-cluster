@@ -60,8 +60,8 @@ spec:
           # shareHost:shareBasePath should be mounted at this location in the controller container
           controllerBasePath: "/storage"
           dirPermissionsMode: "0777"
-          dirPermissionsUser: 1000
-          dirPermissionsGroup: 100
+          dirPermissionsUser: root
+          dirPermissionsGroup: users
 
     # There are 4 different approaches to installing the driver
     # 1: Run the controller service separated from the node service, mount the base share into the controller pod at run time
@@ -78,11 +78,11 @@ spec:
         enabled: false
 
       # For Options 1 and 2
-      #strategy: deployment
+      strategy: deployment
 
       # For Option 1
-      #hostNetwork: true
-      #hostIPC: true
+      hostNetwork: true
+      hostIPC: true
 
       # For Options 3 and 4
       #strategy: node
@@ -90,20 +90,20 @@ spec:
 
     # Option 1
     # do this if the nodes do NOT already have the base volume mounted out-of-band from k8s
-    #  driver:
-    #    securityContext:
-    #      allowPrivilegeEscalation: true
-    #      capabilities:
-    #        add:
-    #        - SYS_ADMIN
-    #      privileged: true
-    #    lifecycle:
-    #      postStart:
-    #        exec:
-    #          command: ["/bin/sh", "-c", "mkdir -p <controllerBasePath>; mount <shareHost>:<shareBasePath> <controllerBasePath>"]
-    #      preStop:
-    #        exec:
-    #          command: ["/bin/sh","-c","umount <controllerBasePath>"]
+      driver:
+        securityContext:
+          allowPrivilegeEscalation: true
+          capabilities:
+            add:
+            - SYS_ADMIN
+          privileged: true
+        lifecycle:
+          postStart:
+            exec:
+              command: ["/bin/sh", "-c", "mkdir -p <controllerBasePath>; mount <shareHost>:<shareBasePath> <controllerBasePath>"]
+          preStop:
+            exec:
+              command: ["/bin/sh","-c","umount <controllerBasePath>"]
 
     # Option 2
     # do this if all nodes DO have the base volume mounted out-of-band from k8s
