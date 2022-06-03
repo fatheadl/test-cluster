@@ -60,8 +60,8 @@ spec:
           # shareHost:shareBasePath should be mounted at this location in the controller container
           controllerBasePath: "/storage"
           dirPermissionsMode: "0777"
-          dirPermissionsUser: 1000
-          dirPermissionsGroup: 100
+          dirPermissionsUser: root
+          dirPermissionsGroup: users
 
     # There are 4 different approaches to installing the driver
     # 1: Run the controller service separated from the node service, mount the base share into the controller pod at run time
