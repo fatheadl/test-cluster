@@ -91,20 +91,21 @@ spec:
             exec:
               command: ["/bin/sh","-c","umount /storage"]
 
-        config:
-          # please see the most up-to-date example of the corresponding config here:
-          # https://github.com/democratic-csi/democratic-csi/tree/master/examples
-          # YOU MUST COPY THE DATA HERE INLINE!
-          driver: nfs-client
-          instance_id:
-          nfs:
-            shareHost: omv3.home
-            shareBasePath: "/fatheadl"
-            # shareHost:shareBasePath should be mounted at this location in the controller container
-            controllerBasePath: "/storage"
-            dirPermissionsMode: "0777"
-            dirPermissionsUser: root
-            dirPermissionsGroup: users
+    driver:
+      config:
+        # please see the most up-to-date example of the corresponding config here:
+        # https://github.com/democratic-csi/democratic-csi/tree/master/examples
+        # YOU MUST COPY THE DATA HERE INLINE!
+        driver: nfs-client
+        instance_id:
+        nfs:
+          shareHost: omv3.home
+          shareBasePath: "/fatheadl"
+          # shareHost:shareBasePath should be mounted at this location in the controller container
+          controllerBasePath: "/storage"
+          dirPermissionsMode: "0777"
+          dirPermissionsUser: root
+          dirPermissionsGroup: users
 
     # Option 2
     # do this if all nodes DO have the base volume mounted out-of-band from k8s
