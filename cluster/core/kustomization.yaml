@@ -9,3 +9,4 @@ resources:
   #- longhorn-system
   #- nfs-client-provisioner
   - democratic-csi-nfs-provisioner
+  #- democratic-csi-nfs-truenas
