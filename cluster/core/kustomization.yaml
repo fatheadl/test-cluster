@@ -8,5 +8,5 @@ resources:
   - system-upgrade
   #- longhorn-system
   #- nfs-client-provisioner
-  - democratic-csi-nfs-provisioner
-  #- democratic-csi-nfs-truenas
+  #- democratic-csi-nfs-provisioner
+  - democratic-csi-nfs-truenas
