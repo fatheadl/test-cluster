@@ -61,8 +61,8 @@ spec:
             #        ...
             #        -----END RSA PRIVATE KEY-----
         zfs:
-          datasetParentName: data/test/nfs/vols
-          detachedSnapshotsDatasetParentName: data/test/nfs/snaps
+          datasetParentName: data/k8s/nfs/vols
+          detachedSnapshotsDatasetParentName: data/k8s/nfs/snaps
           datasetEnableQuotas: true
           datasetEnableReservation: false
           datasetPermissionsMode: "0777"
