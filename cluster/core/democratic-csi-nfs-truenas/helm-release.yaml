@@ -45,13 +45,13 @@ spec:
         instance_id:
         httpConnection:
           protocol: http
-          host: 192.168.230.33
+          host: truenas.home
           port: 80
           username: root
           password: anythingatall
           allowInsecure: true
         sshConnection:
-          host: 192.168.230.33
+          host: truenas.home
           port: 22
           username: root
           # use either password or key
@@ -69,7 +69,7 @@ spec:
           datasetPermissionsUser: root
           datasetPermissionsGroup: wheel
         nfs:
-          shareHost: 192.168.230.33
+          shareHost: truenas.home
           shareAlldirs: false
           shareAllowedHosts: []
           shareAllowedNetworks: []
