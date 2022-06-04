@@ -43,8 +43,8 @@ driver:
         #        ...
         #        -----END RSA PRIVATE KEY-----
     zfs:
-      datasetParentName: hdd/k8s/nfs/vols
-      detachedSnapshotsDatasetParentName: hdd/k8s/nfs/snaps
+      datasetParentName: data/test/nfs/vols
+      detachedSnapshotsDatasetParentName: data/test/nfs/snaps
       datasetEnableQuotas: true
       datasetEnableReservation: false
       datasetPermissionsMode: "0777"
