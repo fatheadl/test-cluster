@@ -4,10 +4,10 @@ kind: PersistentVolumeClaim
 metadata:
   name: hajimari-config
   namespace: default
-  labels:
-    app: hajimari
-  annotations:
-    volume.beta.kubernetes.io/storage-class: "freenas-nfs-csi"  
+  #labels:
+    #app: hajimari
+  #annotations:
+    #volume.beta.kubernetes.io/storage-class: "freenas-nfs-csi"  
 spec:
   accessModes:
     - ReadWriteOnce
