@@ -47,8 +47,9 @@ spec:
           protocol: http
           host: truenas.home
           port: 80
-          username: root
-          password: anythingatall
+          apiKey: 1-w52OYFsdgDWEFVuA9i5MTbP1u5yB1Vdojg8TUTgxQsHmhrfaPGgCXeUL9jsZmxMh
+          #username: root
+          #password: anythingatall
           allowInsecure: true
         sshConnection:
           host: truenas.home
