@@ -7,6 +7,6 @@ resources:
   - metallb-system
   - system-upgrade
   #- longhorn-system
-  #- nfs-client-provisioner
+  - nfs-client-provisioner
   #- democratic-csi-nfs-provisioner
-  - democratic-csi-nfs-truenas
+  #- democratic-csi-nfs-truenas
