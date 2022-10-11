@@ -8,7 +8,7 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  #storageClassName: freenas-nfs-csi
+  storageClassName: nfs-external-provisioner
   resources:
     requests:
       storage: 128Mi
