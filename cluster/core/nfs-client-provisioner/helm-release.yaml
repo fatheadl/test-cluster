@@ -21,8 +21,8 @@ spec:
       repository: k8s.gcr.io/sig-storage/nfs-subdir-external-provisioner
       tag: v4.0.2
     nfs:
-      server: "omv3.home"
-      path: "/fatheadl"
+      server: "t620-1"
+      path: "/volume1/Share"
     mountOptions:
     - nfsvers=4
     - tcp
