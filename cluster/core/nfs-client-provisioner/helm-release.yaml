@@ -31,6 +31,6 @@ spec:
     - noatime
     - nodiratime
     storageClass:
-      defaultClass: false
+      defaultClass: true
       archiveOnDelete: true
       #provisionerName: test
