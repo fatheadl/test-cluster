@@ -99,8 +99,8 @@ spec:
         driver: nfs-client
         instance_id:
         nfs:
-          shareHost: omv3.home
-          shareBasePath: "/fatheadl"
+          shareHost: t620-1
+          shareBasePath: "/volume1/Share/k3s"
           # shareHost:shareBasePath should be mounted at this location in the controller container
           controllerBasePath: "/storage"
           dirPermissionsMode: "0777"
