@@ -35,7 +35,7 @@ spec:
       main:
         type: LoadBalancer
     #    externalIPs:
-    #      - "${SVC_HOME_ASSISTANT_ADDR}"
+    #      - "${METALLB_HOMEASSISTANT_ADDR: 172.16.255.31}"
         externalTrafficPolicy: Local
     probes:
       liveness:
