@@ -42,7 +42,7 @@ spec:
     # It's merely a guide for the initial start up on a fresh install
     # Everything after the first start is managed in the UI
     config:
-      homeassistant: true
+      homeassistant: false
       device_options:
         retain: true
       permit_join: false
@@ -50,7 +50,7 @@ spec:
         base_topic: zigbee2mqtt
         server: "mqtt://mosquitto"
       serial:
-        port: "tcp://192.168.1.90:6638"
+        port: "tcp://172.16.255.80:6638"
       advanced:
         log_output:
           - console
