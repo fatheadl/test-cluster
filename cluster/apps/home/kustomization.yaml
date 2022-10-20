@@ -5,5 +5,5 @@ resources:
   - home-assistant
   - mqtt
   - node-red
-  - zigbee2mqtt
+  #- zigbee2mqtt
   - homebridge
