@@ -26,3 +26,4 @@ resources:
   - influx-charts.yaml
   - longhorn-charts.yaml
   - democratic-csi-charts.yaml
+  - true-charts.yaml
