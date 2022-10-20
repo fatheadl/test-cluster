@@ -48,7 +48,7 @@ spec:
       permit_join: false
       mqtt:
         base_topic: zigbee2mqtt
-        server: "mqtt://mosquitto"
+        server: "mqtt://"${METALLB_MQTT_ADDR}"
       serial:
         port: "tcp://172.16.255.80:6638"
       advanced:
