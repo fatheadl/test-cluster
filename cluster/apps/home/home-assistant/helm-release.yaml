@@ -34,9 +34,12 @@ spec:
     service:
       main:
         type: LoadBalancer
+        spec:
+          loadBalancerIP: 172.16.255.35
+          externalTrafficPolicy: Local
     #    externalIPs:
     #      - "${METALLB_HOMEASSISTANT_ADDR: 172.16.255.31}"
-        externalTrafficPolicy: Local
+        #externalTrafficPolicy: Local
     probes:
       liveness:
         enabled: false
