@@ -26,9 +26,10 @@ spec:
     service:
       main:
         type: LoadBalancer
-#        externalIPs:
-#          - "${SVC_MOSQUITTO_ADDR}"
+      spec:
+        loadBalancerIP: 172.16.255.31
         externalTrafficPolicy: Local
+
 #    auth:
 #      enabled: true
     podAnnotations:
