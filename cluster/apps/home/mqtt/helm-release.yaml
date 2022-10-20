@@ -27,7 +27,7 @@ spec:
       main:
         type: LoadBalancer
       spec:
-        loadBalancerIP: 172.16.255.31
+        loadBalancerIP: "${METALLB_MQTT_ADDR}"
         externalTrafficPolicy: Local
 
 #    auth:
