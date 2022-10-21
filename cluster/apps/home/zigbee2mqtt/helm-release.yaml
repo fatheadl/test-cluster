@@ -51,6 +51,7 @@ spec:
         server: "mqtt://${METALLB_MQTT_ADDR}"
       serial:
         port: "tcp://172.16.255.80:6638"
+        adapter: ezsp
       advanced:
         log_output:
           - console
