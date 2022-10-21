@@ -34,3 +34,4 @@ spec:
       defaultClass: true
       archiveOnDelete: true
       #provisionerName: test
+      pathPattern: "${.PVC.namespace}-${.PVC.name}"
