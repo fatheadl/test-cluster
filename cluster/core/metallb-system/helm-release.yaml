@@ -23,7 +23,7 @@ spec:
       retries: 5
   values:
     psp:
-      create: false
+      create: true
     crds:
       enabled: false        
 
