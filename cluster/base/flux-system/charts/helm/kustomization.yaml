@@ -27,3 +27,4 @@ resources:
   - longhorn-charts.yaml
   - democratic-csi-charts.yaml
   - true-charts.yaml
+  - dysnix-charts.yaml
