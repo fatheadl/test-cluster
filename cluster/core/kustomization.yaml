@@ -5,7 +5,7 @@ resources:
   - cert-manager
   #- kube-system
   - metallb-system
-  - system-upgrade
+  #- system-upgrade
   #- longhorn-system
   - nfs-client-provisioner
   #- democratic-csi-nfs-provisioner
