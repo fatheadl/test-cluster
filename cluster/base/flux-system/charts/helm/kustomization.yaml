@@ -28,3 +28,4 @@ resources:
   - democratic-csi-charts.yaml
   - true-charts.yaml
   - dysnix-charts.yaml
+  - bjw-s-charts.yaml
