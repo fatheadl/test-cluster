@@ -32,11 +32,9 @@ spec:
     hostNetwork: true
     dnsPolicy: ClusterFirstWithHostNet
     service:
-      main:
-        type: LoadBalancer
-        spec:
-          loadBalancerIP: "${METALLB_HOMEASSISTANT_ADDR}"
-          externalTrafficPolicy: Local
+      type: LoadBalancer
+      loadBalancerIP: "${METALLB_HOMEASSISTANT_ADDR}"
+      externalTrafficPolicy: Local
     #    externalIPs:
     #      - "${METALLB_HOMEASSISTANT_ADDR: 172.16.255.31}"
         #externalTrafficPolicy: Local
