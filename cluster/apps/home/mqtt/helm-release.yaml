@@ -24,7 +24,8 @@ spec:
     env:
       TZ: "America/Jamaica"
     service:
-      type: LoadBalancer
+      main:
+        type: LoadBalancer
       #spec: 
       #  loadBalancerIP: "${METALLB_MQTT_ADDR}"
       #externalTrafficPolicy: Local
