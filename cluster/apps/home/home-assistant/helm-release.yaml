@@ -33,7 +33,8 @@ spec:
     dnsPolicy: ClusterFirstWithHostNet
     service:
       type: LoadBalancer
-      loadBalancerIP: "${METALLB_HOMEASSISTANT_ADDR}"
+      loadBalancerIP:
+        - "${METALLB_HOMEASSISTANT_ADDR}"
       externalTrafficPolicy: Local
       #externalIPs:
       #- "${METALLB_HOMEASSISTANT_ADDR: 172.16.255.31}"
