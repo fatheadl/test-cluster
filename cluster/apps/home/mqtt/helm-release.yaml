@@ -28,15 +28,38 @@ spec:
         type: LoadBalancer
         loadBalancerIP: "${METALLB_MQTT_ADDR}"
         externalTrafficPolicy: Local
+        
+    configmap:
+      config:
+        enabled: true
+        data:
+          mosquitto.conf: |
+            listener 1883
+            allow_anonymous true
+            persistence true
+            persistence_location /mosquitto/data
+            connection_messages false
+    persistence:
+      config:
+        enabled: true
+        type: custom
+        mountPath: /mosquitto/config/mosquitto.conf
+        subPath: mosquitto.conf
+        volumeSpec:
+          configMap:
+            name: mosquitto-config
+      data:
+        enabled: true
+        existingClaim: mqtt-config-v1
+        mountPath: /mosquitto/data
+        
+          
 
 #    auth:
 #      enabled: true
     podAnnotations:
       secret.reloader.stakater.com/reload: mqtt
-    persistence:
-      data:
-        enabled: true
-        existingClaim: mqtt-config-v1
+
 #      configinc:
 #        enabled: true
 #        type: custom
