@@ -4,6 +4,8 @@ kind: PersistentVolumeClaim
 metadata:
   name: mqtt-config-v1
   namespace: home
+  labels:
+    app.kubernetes.io/name: mosquitto  
 spec:
   accessModes:
     - ReadWriteOnce
