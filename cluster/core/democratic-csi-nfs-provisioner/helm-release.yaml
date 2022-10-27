@@ -86,7 +86,7 @@ spec:
         lifecycle:
           postStart:
             exec:
-              command: ["/bin/sh", "-c", "mkdir -p /storage; mount omv3.home:/fatheadl /storage"]
+              command: ["/bin/sh", "-c", "mkdir -p /storage; mount t620-1:/volume1/Share/k3s /storage"]
           preStop:
             exec:
               command: ["/bin/sh","-c","umount /storage"]
