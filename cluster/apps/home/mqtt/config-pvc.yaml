@@ -12,5 +12,5 @@ spec:
   resources:
     requests:
       storage: 100Mi
-  volumeName: pvc-nfs-mqtt-dat      
+  volumeName: pvc-nfs-mqtt-data      
   #storageClassName: longhorn

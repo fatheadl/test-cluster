@@ -11,3 +11,4 @@ spec:
   resources:
     requests:
       storage: 128Mi
+  volumeName: pvc-nfs-traefik-data   
