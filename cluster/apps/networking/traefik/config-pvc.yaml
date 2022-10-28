@@ -7,8 +7,8 @@ metadata:
 spec:
   accessModes:
     - ReadWriteOnce
-  storageClassName: local-path
+  #storageClassName: local-path
   resources:
     requests:
       storage: 128Mi
-  volumeName: pvc-nfs-traefik-data   
+  #volumeName: pvc-nfs-traefik-data   

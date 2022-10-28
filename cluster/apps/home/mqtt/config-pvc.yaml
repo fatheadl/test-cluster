@@ -12,5 +12,5 @@ spec:
   resources:
     requests:
       storage: 100Mi
-  volumeName: mqtt-config-v1   
+  #volumeName: mqtt-config-v1   
   #storageClassName: longhorn

@@ -12,5 +12,5 @@ spec:
   resources:
     requests:
       storage: 1Gi
-  volumeName: pvc-nfs-zigb2mqtt-data      
+  #volumeName: pvc-nfs-zigb2mqtt-data      
 #  storageClassName: ceph-block
