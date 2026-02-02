@@ -23,7 +23,7 @@ spec:
   values:
     image:
       repository: ghcr.io/koenkk/zigbee2mqtt
-      tag: 2.7.2
+      tag: 2.8.0
     env:
       TZ: "America/Jamaica"
       ZIGBEE2MQTT_DATA: /data
